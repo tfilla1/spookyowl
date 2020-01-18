@@ -1,0 +1,16 @@
+body {
+    background-color: var(--body-bg-color);
+}
+.card {
+    background-color: var(--header-bg-color);
+    border: 1px solid var(--header-border-shadow-color);
+    box-shadow: 2px 2px 4px var(--header-border-shadow-color);
+}
+.list-header {
+    background-color: var(--menu-bg-color);
+    border: 1px solid var(--menu-border-shadow-color);
+    box-shadow: 2px 2px 4px var(--menu-border-shadow-color);
+}
+.list-item {
+    border-top: 1px solid var(--body-bg-color);
+}

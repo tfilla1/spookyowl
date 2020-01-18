@@ -1,0 +1,6 @@
+localhost:8085 {
+root /Users/tomfilla/web/spookyowl/
+templates
+gzip
+index test.html index.html
+}
