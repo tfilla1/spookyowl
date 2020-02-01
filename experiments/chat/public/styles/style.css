@@ -1,0 +1,40 @@
+.card {
+    background-color: #f0a;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 0 25px;
+}
+
+.modal {
+    background-color: #d2d2d2;
+    position: absolute;
+    top: 150px;
+    right: 90px;
+    z-index: 5px;
+    border-bottom: solid 1px var(--header-border-shadow-color);
+    box-shadow: 1px 2px 4px var(--header-border-shadow-color);
+}
+.modal-title {
+    border-bottom: 2px solid #ccc;
+}
+.modal-body {
+    padding-bottom: 15px;
+}
+input {
+    border: 0;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.message {
+ list-style-type: none;   
+ background-color: var(--body-bg-color);
+ box-shadow: 2px 1px 4px var(--menu-border-shadow-color);
+ /* rgba(169,120,239, 0.5); */
+ border:solid 1px #f0a;
+ /* var(--menu-border-shadow-color); */
+}
+
+.hide {
+    display: none;
+}
