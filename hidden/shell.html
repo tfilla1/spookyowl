@@ -14,29 +14,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0/styles/master.css"
     />
+    <link rel="stylesheet" href="/public/styles/style.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="a description" />
     <meta name="og:title" content="spookyowl-games" />
-    <title>games</title>
     <meta
       property="og:description"
       content="a real description would be better if i dint do this all in html but oh well"
     />
-    <meta property="og:image" content="/images/rpImage.jpg" />
+    <!-- <meta property="og:image" content="/images/rpImage.jpg" /> -->
+
+    <title>games</title>
   </head>
   <body>
     <div class="warble container">
       {{.Include "partials/header.html"}} {{.Include "partials/menu.html"}}
 
       <div class="content">
-        <p>Hola, here are some games.</p>
-        <p>There's 'baseball', which is pretty fun, just start clicking.</p>
-        <p>
-          Also, there's hopper and cube, which are pretty close to the same, but
-          are pretty fun, and will get worked on eventually. Just press spacebar
-          and other buttons, hope for the best, expect the worst
-        </p>
-        <p>stay foolish, stay beautiful, you are you after all.</p>
+         <!-- content -->
       </div>
     </div>
     {{.Include "partials/scripts.html"}}

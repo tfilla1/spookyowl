@@ -17,19 +17,8 @@
     </head>
     <body>
         <div class='warble container'>
-            <header class='header-container'>
-                <div class='header-menu'></div>
-                <div class='header-title'>
-                    <h1><a href="/">spookyowl.space</a></h1>
-                    <h2>speak your mind. love yourself.</h2>
-                </div>
-                <div class='header-side-bar'>
-                    <button id='changeTheme'>simple</button>
-                </div>
-            </header>
-            
-            <div class='menu menu-hide' id='menuContent'>
-            </div>
+            {{.Include "partials/header.html"}}
+            {{.Include "partials/menu.html"}}
             <!-- <div class='side-bar'>
                 <p>hello, i'm a sidebar. how are you?</p>
             </div> -->
@@ -57,8 +46,8 @@
             </div> -->
         </div>
 </body>
-<script src="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0/scripts/general/menu.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0/scripts/general/theme.js"></script>
+{{.Include "partials/scripts.html"}}
+
 <!-- 
 <script src="/js/index.js"></script>
 <script src="/js/dragMenu.js"></script> -->
