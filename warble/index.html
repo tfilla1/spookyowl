@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="/styles/layout.css"> -->
+        <!-- <link rel="stylesheet" href="/styles/colors.css"> -->
+        <!-- <link rel="stylesheet" href="/styles/master.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tfilla1/warble/styles/colors.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tfilla1/warble/styles/master.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <meta name="description" content="a description">
+        <meta name="og:title" content="tomfilla.com" >
+        <meta property="og:description" content="a real description would be better if i dint do this all in html but oh well" />
+        <meta property="og:image" content="/images/rpImage.jpg" />
+    </head>
+    <body>
+        <div class='warble container'>
+            <header class='header-container'>
+                <div class='header-menu'></div>
+                <div class='header-title'>
+                    <h1><a href="/">warble</a></h1>
+                    <h2>free yourself.</h2>
+                </div>
+                <div class='header-side-bar'>
+                    <button id='changeTheme'>simple</button>
+                </div>
+            </header>
+            {{.Include "partials/menu.html"}}
+            <!-- <div class='side-bar'>
+                <p>hello, i'm a sidebar. how are you?</p>
+            </div> -->
+            <div class='content' id='content'>
+                <p>
+                    hello, warble is my style and script "library"
+                    <br>
+                    more to come, maybe.
+                </p>
+                <p>
+                    here's the link if you want to check it out. it's still in the early stages,
+                    so there's that. anyway,
+                    <a href="https://github.com/tfilla1/warble">warble</a>
+                </p>
+                <p>
+                    if you wanna talk, i'm @dbleach88
+                    i don't like that username anymore
+                    but until i get spookyowl, that's gonna
+                    have to do.
+                    so til then _wave_
+                </p>
+            </div>
+            <!-- <div class='footer'>
+
+            </div> -->
+        </div>
+</body>
+
+
+{{.Include "partials/scripts.html"}}
+
+<!-- 
+<script src="/js/index.js"></script>
+<script src="/js/dragMenu.js"></script> -->
+</html>

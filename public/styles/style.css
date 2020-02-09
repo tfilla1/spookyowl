@@ -1,9 +1,1 @@
-:root {
-    --button-color: #000000;
-    --button-bg-color: rgb(198, 134, 244);
-    --button-border-shadow-color:  rgba(141,74,233,0.5);
-    --button-active-bg-color:  rgba(184, 100, 245,0.5);
-}
-.no-border {
-    border: none !important;
-}
+
