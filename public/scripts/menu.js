@@ -5,17 +5,17 @@ var menu = {
             "link" : "/games/"
         },
         {
-            "title": "chorse",
-            "link" : "/chorse/",
+            "title": "warble",
+            "link" : "/warble/",
         },
         {
             "title": "free tacos",
             "link": "/freetacos/",
-        },
-        {
-            "title": "old",
-            "link": "/old/allthngs",
         }
+        // {
+        //     "title": "old",
+        //     "link": "/old/allthngs",
+        // }
     ],
     "games": [
         {
@@ -30,10 +30,10 @@ var menu = {
         //     "title": "hopper",
         //     "link": "/games/hopper/",
         // },
-        {
-            "title": "flird",
-            "link": "/games/flird/",
-        },
+        // {
+        //     "title": "flird",
+        //     "link": "/games/flird/",
+        // },
         {
             "title": "flop",
             "link": "/games/flop/",
@@ -52,6 +52,12 @@ var menu = {
             "title": "videos",
             "link": "/freetacos/videos/"
         }
+    ],
+    "warble" : [
+        {
+            "title": "more to come",
+            "link": "/warble/"
+        }
     ]
 }
 let menuHolder = document.getElementById('menuContent');
@@ -68,8 +74,8 @@ function buildMenu () {
         if (dir.includes('games')) {
             page = 'games';
         }
-        if (dir.includes('chorse')) {
-            page = 'chorse';
+        if (dir.includes('warble')) {
+            page = 'warble';
         }
         if (dir.includes('freetacos')){
             page = 'freetacos';
@@ -77,42 +83,39 @@ function buildMenu () {
     }
     switch (page) {
         case 'home':
-            menu.home.forEach(function(elmt){
-                let element = document.createElement('div');
-                let anchor = document.createElement('a')
-                anchor.href = elmt.link;
-                anchor.text = elmt.title;
-            
-                element.appendChild(anchor);
+            menu.home.forEach(function(elm){
+                let element = createMenuElement(elm.link, elm.title);
                 menuHolder.appendChild(element);
             })
             break;
         case 'games':
-            menu.games.forEach(function(elmt){
-                var element = document.createElement('div');
-                var anchor = document.createElement('a')
-                anchor.href = elmt.link;
-                anchor.text = elmt.title;
-            
-                element.appendChild(anchor);
+            menu.games.forEach(function(elm){
+                let element = createMenuElement(elm.link, elm.title);
                 menuHolder.appendChild(element);
             })
             break;
         case 'freetacos':
-            menu.freetacos.forEach(function(elmt){
-                var element = document.createElement('div');
-                var anchor = document.createElement('a')
-                anchor.href = elmt.link;
-                anchor.text = elmt.title;
-            
-                element.appendChild(anchor);
+            menu.freetacos.forEach(function(elm){
+                let element = createMenuElement(elm.link, elm.title);
                 menuHolder.appendChild(element);
             })
-
         break;
-
+        case 'warble':
+            menu.warble.forEach(function(elm){
+                let element = createMenuElement(elm.link, elm.title);
+                menuHolder.appendChild(element);
+            })
     } 
 }
 
+function createMenuElement(link, title) {
+    var element = document.createElement('div');
+    var anchor = document.createElement('a')
+    anchor.href = link;
+    anchor.text = title;
+
+    element.appendChild(anchor);
+    return element;
+}
 
 window.onload =  buildMenu;

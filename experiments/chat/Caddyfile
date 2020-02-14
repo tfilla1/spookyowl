@@ -1,0 +1,7 @@
+localhost:8088 {
+root /Users/tomfilla/web/spookyowl/
+templates
+gzip
+index test.html index.html
+proxy /Users/tomfilla/web/spookyowl/experiments localhost:3000
+}

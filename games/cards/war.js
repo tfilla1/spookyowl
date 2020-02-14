@@ -2,12 +2,13 @@
 let deck = [];
 let users = [];
 let gameplay = [];
+
 let results = '';
 setup();
 function setup() {
     createDeck();
-    users.push(new User('tom', 0));
-    users.push(new User('cpu', 1));
+    users.push(new User('tom', 0, 0));
+    users.push(new User('cpu', 1, 0));
     deal(users, deck);
     console.log(users);
     console.log(deck);
