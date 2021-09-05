@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0/styles/colors.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0/styles/master.css"
-    />
-    <link rel="stylesheet" href="/public/styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    {{include "partials/styles.html"}}
     <meta name="description" content="a description" />
     <meta name="og:title" content="spookyowl-games" />
     <meta
@@ -28,7 +15,8 @@
   </head>
   <body>
     <div class="warble container">
-      {{.Include "partials/header.html"}} {{.Include "partials/menu.html"}}
+      {{include "partials/header.html"}} 
+      {{include "partials/menu.html"}}
 
       <div class="content no-border">
         <!-- content -->
@@ -45,7 +33,7 @@
     <script src="baseball.js" type="text/javascript"></script>
     <script src="stadium.js" type="text/javascript"></script>
     <script src="game.js" type="text/javascript"></script>
-    {{.Include "partials/scripts.html"}}
+    {{include "partials/scripts.html"}}
   </body>
 </html>
 

@@ -7,7 +7,7 @@ var cnv;
 function setup() {
 	cube = new Cube(300, height/2);
 	cnv = createCanvas(640,480);
-	centerCanvas();
+	cnv.center();
 	riv.push(new Cube(600, 0));
 }
 

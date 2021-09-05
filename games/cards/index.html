@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/tfilla1/warble/styles/colors.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/tfilla1/warble/styles/master.css"
-    />
-    <link rel="stylesheet" href="/public/styles/style.css">
+    
+    {{include "partials/styles.html"}}
 
     <link rel="stylesheet" href="cards.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="a description" />
     <meta name="og:title" content="spookyowl-games" />
     <meta
@@ -29,10 +16,11 @@
     <title>cards</title>
   </head>
   <body>
-    <div class="warble container no-border">
-      {{.Include "partials/header.html"}} {{.Include "partials/menu.html"}}
+    <div class="warble container">
+      {{include "partials/header.html"}} 
+      {{include "partials/menu.html"}}
 
-      <div class="content no-border">
+      <div class="content">
         <div class="cards">
           <div class="cards-button">
             <button id="playButton" class="play-button">play</button>
@@ -49,11 +37,6 @@
     <script src="deck.js"></script>
     <script src="user.js"></script>
     <script src="war.js"></script>
-    <script type="text/javascript">
-      //var jsTest = JSON.stringify(deck);
-      //var testing = JSON.parse(deck);
-      console.log(deckData.cards[0]);
-    </script>
-    {{.Include "partials/scripts.html"}}
+    {{include "partials/scripts.html"}}
   </body>
 </html>

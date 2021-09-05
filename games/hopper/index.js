@@ -9,8 +9,8 @@ let downBlocks = [];
 //let b = new Block();
 function setup() {
 	cnv = createCanvas(640, 480);
-	centerCanvas();
-	cube = new Cube();
+	cnv.center();
+	cube = new Cube(20,20);
 	cube.changeColor(255,0,0);
 	//blocks = Array(100).fill().map(b => new Block());
 }
@@ -72,3 +72,6 @@ function keyPressed() {
 		cube.up();
 	}
 }
+
+//setup()
+//draw()

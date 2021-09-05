@@ -1,8 +1,24 @@
-{{.Include "partials/head.html"}}
-{{.Include "partials/p5.html"}}
-	<title>hopper</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hopper</title>
+    {{include "partials/styles.html"}}
+</head>
+<body>
+    <div class="warble container">
+      {{include "partials/header.html"}} 
+      {{include "partials/menu.html"}}
+
+      <div class="content no-border">
+         <!-- content -->
+      </div>
+    </div>
+{{include "partials/scripts.html"}}
+    {{include "partials/p5.html"}}
     <script src="Block.js" type="text/javascript"></script>
     <script src="/games/cube/cube.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript"></script>
-{{.Include "partials/header.html"}}
-{{.Include "partials/foot.html"}}
+</body>
+</html>

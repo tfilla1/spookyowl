@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0/styles/colors.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/tfilla1/warble@2.0/styles/master.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{include "partials/styles.html"}}
     <meta name="description" content="a description" />
     <meta name="og:title" content="spookyowl-games" />
     <title>games</title>
@@ -26,7 +13,8 @@
   </head>
   <body>
     <div class="warble container">
-      {{.Include "partials/header.html"}} {{.Include "partials/menu.html"}}
+      {{include "partials/header.html"}} 
+      {{include "partials/menu.html"}}
 
       <div class="content">
         <p>Hola, here are some games.</p>
@@ -39,6 +27,6 @@
         <p>stay foolish, stay beautiful, you are you after all.</p>
       </div>
     </div>
-    {{.Include "partials/scripts.html"}}
+    {{include "partials/scripts.html"}}
   </body>
 </html>

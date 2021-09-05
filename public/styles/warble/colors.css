@@ -1,0 +1,39 @@
+:root {
+    --border-color: #000000;
+    --border-shadow-color: rgba(12,12,12, 0.5);
+
+    --button-color: #000000;
+    --button-bg-color: rgb(198, 134, 244);
+    --button-border-shadow-color:  rgba(141,74,233,0.5);
+    --button-active-color:  rgba(184, 100, 245,0.5);
+
+    --header-color: #000000;
+    --header-bg-color: #c686f4;
+    --header-border-shadow-color:  rgba(141,74,233,0.5);
+
+    --menu-bg-color: #75f9ad;
+    --menu-color: #000000;
+    --menu-border-shadow-color: rgba(154,97,236,0.5);
+
+    --sidebar-bg-color: var(--menu-bg-color);
+    --sidebar-border-shadow-color: var(--menu-border-shadow-color);
+    --sidebar-color: var(--menu-color);
+
+    --black-bg-color: #000000;
+    --black-color: #f3f3f3;
+
+    --simple-bg-color: #2d2d2d;
+    --simple-header-bg-color: #c0306e;
+    --simple-header-color: #000000;
+    --simple-body-color: #d3d3d3;
+
+    --warble-header-bg-color: #c686f4;
+    --warble-body-bg-color: #3f86f5;
+    --warble-menu-bg-color: #75f9ad;
+    --warble-color: #000000;
+
+    --font-family: 'Questrial', sans-serif;
+    --font-size: 14pt;
+
+
+}

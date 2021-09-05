@@ -1,7 +1,20 @@
-{{.Include "partials/head.html"}}
-{{.Include "partials/p5.html"}}
-	<title>dont drop the cube</title>
-    <script src="cube.js" type="text/javascript"></script>
-    <script src="index.js" type="text/javascript"></script>
-{{.Include "partials/header.html"}}
-{{.Include "partials/foot.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{include "partials/styles.html"}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dont drup the cup</title>
+</head>
+<body>
+    <div class="warble container">
+      {{include "partials/header.html"}} 
+      {{include "partials/menu.html"}}
+        
+    </div>
+    {{include "partials/p5.html"}}
+        <script src="cube.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+    {{include "partials/scripts.html"}}
+</body>
+</html>

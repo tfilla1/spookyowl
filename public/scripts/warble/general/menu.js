@@ -8,10 +8,10 @@ var menu = {
             "title": "warble",
             "link" : "/warble/",
         },
-        // {
-        //     "title": "experiments",
-        //     "link": "/experiments/",
-        // }
+        {
+            "title": "free tacos",
+            "link": "/freetacos/",
+        }
         // {
         //     "title": "old",
         //     "link": "/old/allthngs",
@@ -22,35 +22,35 @@ var menu = {
             "title": "baseball",
             "link" : "/games/baseball/"
         },
-        {
-            "title": "cards",
-            "link": "/games/cards/"
-        },
-        {
-            "title": "cube",
-            "link" : "/games/cube/",
-        },
+        // {
+        //     "title": "cube",
+        //     "link" : "/games/cube/",
+        // },
+        // {
+        //     "title": "hopper",
+        //     "link": "/games/hopper/",
+        // },
+        // {
+        //     "title": "flird",
+        //     "link": "/games/flird/",
+        // },
         {
             "title": "flop",
             "link": "/games/flop/",
         },
         {
-            "title": "hopper",
-            "link": "/games/hopper/",
-        },
-        {
-            "title": "melopity",
-            "link": "/games/melopity/",
-        },
+            "title": "cards",
+            "link": "/games/cards/"
+        }
     ],
-    "experiments" : [
+    "freetacos" : [
         {
-            "title": "calculator",
-            "link" : "/experiments/calculator/",
+            "title": "music",
+            "link" : "/freetacos/music/",
         },
         {
-            "title": "chat",
-            "link": "/experiments/chat/"
+            "title": "videos",
+            "link": "/freetacos/videos/"
         }
     ],
     "warble" : [
@@ -71,15 +71,14 @@ function buildMenu () {
     if (dir === '' ){
         page = 'home';
     } else {
-        //var 
         if (dir.includes('games')) {
             page = 'games';
         }
         if (dir.includes('warble')) {
             page = 'warble';
         }
-        if (dir.includes('experiments')){
-            page = 'experiments';
+        if (dir.includes('freetacos')){
+            page = 'freetacos';
         }
     }
     switch (page) {
@@ -95,8 +94,8 @@ function buildMenu () {
                 menuHolder.appendChild(element);
             })
             break;
-        case 'experiments':
-            menu.experiments.forEach(function(elm){
+        case 'freetacos':
+            menu.freetacos.forEach(function(elm){
                 let element = createMenuElement(elm.link, elm.title);
                 menuHolder.appendChild(element);
             })
