@@ -1,0 +1,130 @@
+/* grid related */
+.header-container {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    grid-template-areas: "headerMenu headerTitle headerSidebar";
+
+    grid-area: headerContainer;
+    
+    /* spacing */
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+.header-title {
+    grid-area: headerTitle;
+    text-align: center;
+    align-self: center;
+
+}
+
+.header-side-bar {
+    grid-area: headerSidebar;
+    text-align: right;
+
+}
+.header-menu {
+    grid-area: headerMenu;
+}
+
+/* .menu-button-area {
+    grid-area: menuButtonArea;
+    background-color: #61ec9b;
+}
+.menu-icon {
+    grid-area: menuIcon;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    }
+    .menu-button {
+        display: none;
+    }
+.menu-bar {
+    /*width: 50%;
+    height: 0;
+    border: 1px solid black;
+    margin: 25px auto; 
+  } */
+
+.menu {
+    grid-area: menu;
+    padding: 20px 25px;
+    /* height: 100%; */
+
+    /*testing area*/
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-items: baseline; */
+
+
+}
+
+.menu > div {
+    /* padding-top: 10px; */
+    margin: 10px auto;
+}
+.content {
+    grid-area: content;
+    height: 250px;
+    margin: 25px auto;
+    padding: 20px 40px;
+}
+.sidebar-color {
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-color);
+    box-shadow: -2px 1px 4px var(--sidebar-border-shadow-color);
+    border-left:solid 1px var(--sidebar-border-shadow-color);
+}
+.sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    padding: 20px 25px;
+}
+.footer-color {
+    color: var(--footer-color);
+    background-color: var(--footer-bg-color);
+
+    /* border && shading  */
+    border-top: solid 1px var(--footer-border-shadow-color);
+    box-shadow: 1px -2px 4px var(--footer-border-shadow-color);
+}
+.footer {
+    grid-area: footer;
+
+    /* spacing */
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 2fr 8fr 2fr;
+    grid-gap: 0;
+    grid-template-areas:
+      "headerContainer headerContainer headerContainer"
+      "menu content sidebar"
+      "menu content sidebar";
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.alt-container {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 2fr 2fr 6fr 2fr;
+    grid-gap: 0;
+    grid-template-areas:    "headerContainer headerContainer headerContainer"
+                            "content content content"
+                            "content content content"
+                            "menu menu menu"
+}

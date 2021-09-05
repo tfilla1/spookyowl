@@ -1,0 +1,52 @@
+/*
+naming:
+
+page:
+headerContainer headerContainer headerContainer
+menu            content         content
+footer          footer          footer
+
+header:
+headerMenu      headerTitle     headerSidebar
+
+menu: 
+(flex box)
+
+*/
+/* rename to grid! */
+@import 'colors.css';
+@import 'grid.css';
+@import 'themes.css';
+
+body {
+    font-family: var(--font-family) ;
+    font-size: var(--font-size);
+}
+.no-border {
+    border: none !important;
+}
+
+#changeTheme {
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    mix-blend-mode: lighten;
+}
+
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--body-color);
+}
+
+a {
+    text-decoration: none;
+}
+.intro {
+    padding: 20px 40px;
+}

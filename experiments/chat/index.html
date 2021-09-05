@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tfilla1/warble/styles/colors.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tfilla1/warble/styles/master.css">
+    {{include "partials/styles.html"}}
     <link rel="stylesheet" href="/styles/style.css">
     <title>chat for chat</title>
 </head>
-<body>
-    <div class='container'>
-        <div class='header-container'>
-            <div class='header-menu'></div>
-            <div class='header-title'>
-                <h1>chat</h1>
-            </div>
-            <div class='header-side-bar'></div>
-        </div>
-        <main class='content'>
-            <div class='card'>
-                <p>
-                    here's a space to chat to other people that are cool.
-                    spread just being nice and stuff.  we'll be fine. it'll be okay.
-                </p>
-            </div>
-            <div id='nameFormContainer'>
-                <form id="nameForm" action="">
-                    <input type="text" name="newUsername" id="newUsername" placeholder="new name" />
-                    <input type="button" onclick="changeName();" value="update username"/>
+    <body>
+        <div class="warble container">
+            {{include "partials/header.html"}} 
+            {{include "partials/menu.html"}}
+    
+            <div class="content">
+                <div class='card'>
+                    <p>
+                        here's a space to chat to other people that are cool.
+                        spread just being nice and stuff.  we'll be fine. it'll be okay.
+                    </p>
+                </div>
+                <div id='nameFormContainer'>
+                    <form id="nameForm" action="">
+                        <input type="text" name="newUsername" id="newUsername" placeholder="new name" />
+                        <input type="button" onclick="changeName();" value="update username"/>
+                    </form>
+                    <div id="currentNameDisplay" class='hide'>
+                        Current Username: <span id="currName"></span>
+                        <button onclick='showNameForm();'>change name</button>
+                    </div>
+                </div>
+                <ul id="messages"></ul>
+                <form id='messageForm' action="">
+                    <input id="m" autocomplete="off" type="text">
+                    <button>Send</button>
                 </form>
-                <div id="currentNameDisplay" class='hide'>
-                    Current Username: <span id="currName"></span>
-                    <button onclick='showNameForm();'>change name</button>
+            </main>
+        </div>
+            <div class='modal hide'>
+                <div class='modal-header'>
+                    <h1 class='modal-title'>Enter User Name</h1>
+                </div>
+                <div class='modal-body'>
+                    <label for="username">Username:</label>
+                    <input type="text" id='username' name='username' placeholder="username" />
+                    <input type="button" name='updateUsername' onclick="newUser();" value='Create User' />
                 </div>
             </div>
-            <ul id="messages"></ul>
-            <form id='messageForm' action="">
-                <input id="m" autocomplete="off" type="text">
-                <button>Send</button>
-            </form>
-        </main>
-    </div>
-    <div class='modal hide'>
-        <div class='modal-header'>
-            <h1 class='modal-title'>Enter User Name</h1>
         </div>
-        <div class='modal-body'>
-            <label for="username">Username:</label>
-            <input type="text" id='username' name='username' placeholder="username" />
-            <input type="button" name='updateUsername' onclick="newUser();" value='Create User' />
-        </div>
-    </div>
-<script src="/socket.io/socket.io.js"></script>
-<script src="/scripts/User.js"></script>
-<script src="/scripts/client.js"></script>
-</body>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/scripts/User.js"></script>
+        <script src="/scripts/client.js"></script>
+        {{include "partials/scripts.html"}}
+    </body>
 </html>

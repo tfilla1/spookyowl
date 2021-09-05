@@ -1,6 +1,8 @@
 localhost:8085 {
-root /Users/tomfilla/web/spookyowl/
+root * /Users/tomfilla/web/spookyowl
+file_server 
 templates
-gzip
-index test.html index.html
+encode gzip
+
+reverse_proxy /exp/chat/* localhost:3000
 }

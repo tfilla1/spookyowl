@@ -1,0 +1,87 @@
+.black {
+    background-color: var(--black-bg-color) !important;
+    color: var(--black-color) !important;
+}
+.black a {
+    color: white;
+}
+/* .black > header {
+    background-color: var(--simple-header-bg-color) !important;
+    color: var(--simple-header-color) !important;
+
+    border-bottom: solid 4px var(--border-color);
+    box-shadow: 4px 2px 4px var(--border-shadow-color);
+}
+.black > header a {
+    color: var(--header-color);
+}
+.black > .menu {
+    background-color: var(--simple-header-bg-color) !important;
+    color: var(--simple-header-color) !important;
+    border-right: solid 4px var(--border-color);
+    box-shadow: 2px 4px 4px var(--border-shadow-color);
+}
+.black > .menu a {
+    color: var(--simple-header-color) !important;
+}
+.black > .content {
+    background-color: var(--simple-bg) !important;
+    color: var(--simple-color) !important;
+} */
+
+.simple {
+    background-color: var(--simple-bg-color) !important;
+    color: var(--simple-color) !important;
+}
+.simple > header {
+    background-color: var(--simple-header-bg-color) !important;
+    color: var(--simple-header-color) !important;
+
+    border-bottom: solid 4px var(--border-color);
+    /* box-shadow: 4px 2px 4px var(--border-shadow-color); */
+}
+.simple > header a {
+    color: var(--simple-header-color);
+}
+.simple > .menu {
+    background-color: var(--simple-header-bg-color) !important;
+    color: var(--simple-header-color) !important;
+    border-right: solid 4px var(--border-color);
+    /* box-shadow: 2px 4px 4px var(--border-shadow-color); */
+}
+.simple > .menu a {
+    color: var(--simple-header-color) !important;
+}
+.simple > .content {
+    background-color: var(--simple-body-bg-color) !important;
+    color: var(--simple-body-color) !important;
+}
+
+.warble {
+    background-color: var(--warble-body-bg-color);
+    color: var(--warble-color);
+}
+.warble > header {
+    background-color: var(--warble-header-bg-color);
+    color: var(--warble-color);
+
+    /* border && shading  */
+     border-bottom: solid 4px var(--border-color);
+    /*box-shadow: 215px 4px 4px var(--header-border-shadow-color); */
+}
+.warble > header a {
+    color: var(--warble-color);
+}
+.warble > .menu {
+    background-color: var(--warble-menu-bg-color);
+    /* box-shadow: 4px 2px 4px var(--menu-border-shadow-color); */
+    /* rgba(169,120,239, 0.5); */
+    border-right:solid 5px var(--border-color);
+}
+.warble > .menu a {
+    color: var(--warble-color) !important;
+}
+.warble > .content {
+    background-color: var(--warble-body-bg-color);
+    color: var(--warble-color);
+}
