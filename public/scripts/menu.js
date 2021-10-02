@@ -42,6 +42,10 @@ var menu = {
             "title": "melopity",
             "link": "/games/melopity/",
         },
+        {
+            "title": "pong",
+            "link": "/games/pong/",
+        },
     ],
     "experiments" : [
         {
